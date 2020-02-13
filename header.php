@@ -14,4 +14,4 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-https://github.com/BluePraise/Gogoplastics.git
+
