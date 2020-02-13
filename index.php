@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php
+	get_header();
+?>
 
 <div class="intro">
 	<figure class="logo">
@@ -13,9 +15,6 @@
         	echo '<h1>'. get_bloginfo( 'name' ) .'</h1>';
 		}
 
-		// if ( function_exists( 'the_custom_logo' ) ) {
- 	// 		the_custom_logo();
-		// }
 		?>
 
 
