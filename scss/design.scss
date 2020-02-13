@@ -1,0 +1,21 @@
+/* Design Specific -------------------------- */
+
+.wrapper {
+    max-width: 1280px;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1.intro--title {
+    width: 664px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 400;
+}
