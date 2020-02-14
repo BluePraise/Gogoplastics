@@ -5475,7 +5475,7 @@ input[type="checkbox"] {
   border-radius: 0;
   border-style: solid;
   border-width: 0.1rem;
-  border-color: #dcd7ca;
+  border-color: transparent;
   box-shadow: none;
   cursor: pointer;
 }
@@ -5499,7 +5499,7 @@ button {
 
 input,
 textarea {
-  background-color: #020F02;
+  background-color: #cccfcc;
   color: #000;
 }
 
@@ -5528,7 +5528,8 @@ input[type="color"],
 textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
-  border-color: #020F02;
+  background-color: #cccfcc;
+  border-color: transparent;
   border-radius: 0;
   border-style: solid;
   border-width: 0.1rem;
@@ -5646,6 +5647,7 @@ input[type="search"]:focus {
 /* Design Specific -------------------------- */
 .wrapper {
   max-width: 1280px;
+  margin: 0 auto;
 }
 
 .intro {
@@ -5697,5 +5699,9 @@ footer p {
   letter-spacing: 0.12px;
   font-size: 12px;
   font-weight: 400;
+}
+
+input[type="text"].newsletter {
+  height: 48px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -9,10 +9,12 @@
     </div>
     <div class="footer--col subscribe">
         <h4>Subscribe newsletter</h4>
-        <p><input type="text"></p>
+        <p><input class="newsletter" type="text"></p>
     </div>
     <div class="footer--col legal">
         <h4>Disclaimer/Privacy policy</h4>
+        <a href="https://instagram.com/magalielindamatters"><i data-feather="instagram"></i></a>
+        <p></p>
     </div>
 
 </footer>
