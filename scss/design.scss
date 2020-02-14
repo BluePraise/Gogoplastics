@@ -9,6 +9,8 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
+    margin-bottom: 500px;
 }
 
 
@@ -17,5 +19,31 @@ h1.intro--title {
     text-align: center;
     font-size: 40px;
     line-height: 50px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 20px;
+}
+.footer--col {
+    margin-right: 16px;
+    width: 324px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+footer h4 {
+    border-bottom: 1px dotted;
+    margin-bottom: 10px;
+}
+
+footer h4,
+footer p {
+    letter-spacing: 0.12px;
+    font-size: 12px;
     font-weight: 400;
 }
