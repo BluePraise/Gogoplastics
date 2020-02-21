@@ -5,8 +5,10 @@
     margin: 0 auto;
 }
 
-.grid {
-    display: grid;
+
+.container {
+    width: 1100px;
+    margin: auto;
 }
 
 .intro {
@@ -30,6 +32,7 @@ h1.intro--title {
 
 h2.page-title {
     width: 500px;
+    z-index: 1;
     margin-left: 160px;
     font-size: 151px;
     text-transform: uppercase;

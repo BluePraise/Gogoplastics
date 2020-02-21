@@ -209,57 +209,6 @@ a:focus {
   text-decoration: none;
 }
 
-/* Lists ------------------------------------- */
-ul,
-ol {
-  margin: 0 0 3rem 3rem;
-}
-
-ul {
-  list-style: disc;
-}
-
-ul ul {
-  list-style: circle;
-}
-
-ul ul ul {
-  list-style: square;
-}
-
-ol {
-  list-style: decimal;
-}
-
-ol ol {
-  list-style: lower-alpha;
-}
-
-ol ol ol {
-  list-style: lower-roman;
-}
-
-li {
-  line-height: 1.5;
-  margin: 0.5rem 0 0 2rem;
-}
-
-li > ul,
-li > ol {
-  margin: 1rem 0 0 2rem;
-}
-
-.reset-list-style,
-.reset-list-style ul,
-.reset-list-style ol {
-  list-style: none;
-  margin: 0;
-}
-
-.reset-list-style li {
-  margin: 0;
-}
-
 dt,
 dd {
   line-height: 1.5;
@@ -5644,14 +5593,68 @@ input[type="search"]:focus {
   outline-offset: -4px;
 }
 
+/* Lists ------------------------------------- */
+ul,
+ol {
+  margin: 0 0 3rem 3rem;
+}
+
+ul {
+  list-style: disc;
+}
+
+ul ul {
+  list-style: circle;
+}
+
+ul ul ul {
+  list-style: square;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ol ol {
+  list-style: lower-alpha;
+}
+
+ol ol ol {
+  list-style: lower-roman;
+}
+
+li {
+  line-height: 1.5;
+  margin: 0.5rem 0 0 2rem;
+}
+
+li > ul,
+li > ol {
+  margin: 1rem 0 0 2rem;
+}
+
+.reset-list-style, .projects-list,
+.reset-list-style ul,
+.projects-list ul,
+.reset-list-style ol,
+.projects-list ol {
+  list-style: none;
+  margin: 0;
+}
+
+.reset-list-style li, .projects-list li {
+  margin: 0;
+}
+
 /* Design Specific -------------------------- */
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
 }
 
-.grid {
-  display: grid;
+.container {
+  width: 1100px;
+  margin: auto;
 }
 
 .intro {
@@ -5678,6 +5681,7 @@ h1.intro--title {
 
 h2.page-title {
   width: 500px;
+  z-index: 1;
   margin-left: 160px;
   font-size: 151px;
   text-transform: uppercase;
@@ -5720,4 +5724,44 @@ footer p {
 input[type="text"].newsletter {
   height: 48px;
 }
+
+.projects {
+  margin-bottom: 100px;
+}
+
+.projects-list {
+  position: relative;
+  z-index: -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 16px;
+  width: 1120px;
+  margin: -200px auto 30px;
+}
+
+.projects-list li {
+  margin-bottom: 60px;
+}
+
+.projects-list li a {
+  display: block;
+}
+
+.projects-list li .project-summary {
+  font-size: 12px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.projects .page-content {
+  width: 50%;
+}
+
+.projects .page-content p {
+  font-size: 14px;
+}
+
+/* ---------------------
+* Project Single
+* ---------------------*/
 /*# sourceMappingURL=style.css.map */

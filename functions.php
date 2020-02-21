@@ -15,8 +15,13 @@
 
     // 02 Widget Theme Support (mainly in footer)
     add_theme_support( 'customize-selective-refresh-widgets' );
+    add_image_size( 'project-thumb', 324, 231 ); // 300 pixels wide (and unlimited height)
 
-    //02 Widget Initialisation
+
+    // 03 Widget Theme Support (mainly in footer)
+    add_theme_support( 'post-thumbnails' );
+
+    //04 Widget Initialisation
     function gogo_widgets_init() {
 
         register_sidebar(
@@ -62,9 +67,13 @@
 
             // Custom CSS
             wp_register_style( 'gogo', get_template_directory_uri() . '/style.css' );
+            wp_register_style( 'gogo_projects_css', get_template_directory_uri() . 'css/projects.css' );
 
             // Register CSS
             wp_enqueue_style( 'gogo' );
+            if ( is_page( 'Projects Template' ) ) {
+                wp_enqueue_style( 'gogo_projects_css' );
+            }
 
     }
 
