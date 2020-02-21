@@ -5650,6 +5650,10 @@ input[type="search"]:focus {
   margin: 0 auto;
 }
 
+.grid {
+  display: grid;
+}
+
 .intro {
   display: -webkit-box;
   display: flex;
@@ -5673,12 +5677,15 @@ h1.intro--title {
 }
 
 h2.page-title {
-  width: 100px;
-  margin-left: 60px;
+  width: 500px;
+  margin-left: 160px;
   font-size: 151px;
   text-transform: uppercase;
   font-weight: 100;
   line-height: 1;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 footer {

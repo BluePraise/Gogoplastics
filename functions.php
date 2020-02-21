@@ -101,34 +101,24 @@
     function projects_posttype() {
 
         $labels = array(
-            'name'                  => _x( 'Projecten', 'Post type general name', 'textdomain' ),
-            'singular_name'         => _x( 'Project', 'Post type singular name', 'textdomain' ),
-            'menu_name'             => _x( 'Projecten', 'Admin Menu text', 'textdomain' ),
-            'name_admin_bar'        => _x( 'Project', 'Add New on Toolbar', 'textdomain' ),
-            'add_new'               => __( 'Add New', 'textdomain' ),
-            'add_new_item'          => __( 'Add New Project', 'textdomain' ),
-            'new_item'              => __( 'New Project', 'textdomain' ),
-            'edit_item'             => __( 'Edit project', 'textdomain' ),
-            'view_item'             => __( 'View project', 'textdomain' ),
-            'all_items'             => __( 'All projects', 'textdomain' ),
-            'search_items'          => __( 'Search projects', 'textdomain' ),
-            'parent_item_colon'     => __( 'Parent projects:', 'textdomain' ),
-            'not_found'             => __( 'No projects found.', 'textdomain' ),
-            'not_found_in_trash'    => __( 'No projects found in Trash.', 'textdomain' ),
-            'featured_image'        => _x( 'project Cover Image', 'Overrides the “Featured Image” phrase for this post type. Added in 4.3', 'textdomain' ),
-            'set_featured_image'    => _x( 'Set cover image', 'Overrides the “Set featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
-            'remove_featured_image' => _x( 'Remove cover image', 'Overrides the “Remove featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
-            'use_featured_image'    => _x( 'Use as cover image', 'Overrides the “Use as featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
-            'archives'              => _x( 'project archives', 'The post type archive label used in nav menus. Default “Post Archives”. Added in 4.4', 'textdomain' ),
-            'insert_into_item'      => _x( 'Insert into project', 'Overrides the “Insert into post”/”Insert into page” phrase (used when inserting media into a post). Added in 4.4', 'textdomain' ),
-            'uploaded_to_this_item' => _x( 'Uploaded to this project', 'Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used when viewing media attached to a post). Added in 4.4', 'textdomain' ),
-            'filter_items_list'     => _x( 'Filter projects list', 'Screen reader text for the filter links heading on the post type listing screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4', 'textdomain' ),
-            'items_list_navigation' => _x( 'projects list navigation', 'Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4', 'textdomain' ),
-            'items_list'            => _x( 'projects list', 'Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/”Pages list”. Added in 4.4', 'textdomain' ),
+            'name'               => _x( 'Projects', 'post type general name' ),
+            'singular_name'      => _x( 'Project', 'post type singular name' ),
+            'add_new'            => _x( 'Add New', 'project' ),
+            'add_new_item'       => __( 'Add New Project' ),
+            'edit_item'          => __( 'Edit Project' ),
+            'new_item'           => __( 'New Project' ),
+            'all_items'          => __( 'All Projects' ),
+            'view_item'          => __( 'View Project' ),
+            'search_items'       => __( 'Search Projects' ),
+            'not_found'          => __( 'No projects found' ),
+            'not_found_in_trash' => __( 'No projects found in the Trash' ),
+            'parent_item_colon'  => '',
+            'menu_name'          => 'Projects'
         );
 
         $args = array(
             'labels'             => $labels,
+            'description'        => 'An overview of gogoplastics projects',
             'public'             => true,
             'publicly_queryable' => true,
             'show_ui'            => true,
@@ -144,6 +134,25 @@
 
         register_post_type( 'projects', $args );
     }
+
+    function gogo_updated_messages( $messages ) {
+      global $post, $post_ID;
+      $messages['product'] = array(
+        0 => '',
+        1 => sprintf( __('Project updated. <a href="%s">View project</a>'), esc_url( get_permalink($post_ID) ) ),
+        2 => __('Custom field updated.'),
+        3 => __('Custom field deleted.'),
+        4 => __('Project updated.'),
+        5 => isset($_GET['revision']) ? sprintf( __('Project restored to revision from %s'), wp_post_revision_title( (int) $_GET['revision'], false ) ) : false,
+        6 => sprintf( __('Project published. <a href="%s">View project</a>'), esc_url( get_permalink($post_ID) ) ),
+        7 => __('Project saved.'),
+        8 => sprintf( __('Project submitted. <a target="_blank" href="%s">Preview project</a>'), esc_url( add_query_arg( 'preview', 'true', get_permalink($post_ID) ) ) ),
+        9 => sprintf( __('Project scheduled for: <strong>%1$s</strong>. <a target="_blank" href="%2$s">Preview project</a>'), date_i18n( __( 'M j, Y @ G:i' ), strtotime( $post->post_date ) ), esc_url( get_permalink($post_ID) ) ),
+        10 => sprintf( __('Project draft updated. <a target="_blank" href="%s">Preview project</a>'), esc_url( add_query_arg( 'preview', 'true', get_permalink($post_ID) ) ) ),
+      );
+      return $messages;
+    }
+    add_filter( 'post_updated_messages', 'gogo_updated_messages' );
 
     // Add Actions
 

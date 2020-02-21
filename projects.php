@@ -8,18 +8,25 @@ get_header();
 <main id="site-content" role="main">
 
 
-    <?php while ( have_posts() ) : the_post(); ?>
+    <?php
+        $args = array(  'post_type' => 'projects' );
+        $projects = new WP_Query( $args );
 
-        <h2 class="page-title"><?php the_title(); ?></h2>
+        if( $projects->have_posts() ) :  ?>
 
-        <?php // If comments are open or we have at least one comment, load up the comment template.
-        if ( comments_open() || get_comments_number() ) :
-            comments_template();
+            <h2 class="page-title"><?php the_title(); ?></h2>
+
+        <?php while( $projects->have_posts() ) : $projects->the_post(); ?>
+
+        <div class="grid">
+
+
+        <?php
+            endwhile;
         endif;
+        wp_reset_postdata();?>
 
-        endwhile; // End of the loop.?>
-
-
+        </div> <!-- end of .grid -->
 
 </main>
 <?php get_footer(); ?>
