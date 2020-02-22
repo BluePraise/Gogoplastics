@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
-<main id="site-content" class="container" role="main">
+<main id="site-content" class="container projects" role="main">
 
+
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/projects.css">
     <?php
 
         if( have_posts() ) : while( have_posts() ) : the_post(); ?>

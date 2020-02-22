@@ -13,10 +13,10 @@ Tags: --
 This theme, like WordPress, is licensed under the GPL.
 */
 
-@import 'wordpress.scss';
+
+@import "settings.scss";
+
 @import 'base.scss';
+@import 'wordpress.scss';
 @import 'design.scss';
-@import 'projects.scss';
-
-
-
+@import 'nav.scss';

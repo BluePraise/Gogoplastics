@@ -1,19 +1,19 @@
+@import "settings.scss";
+
 .projects {
     margin-bottom: 100px;
-    margin-top: 160px;
+    padding-top: 70px;
 }
 
-
-
 .projects-list {
-    @extend .reset-list-style;
+    list-style: none;
     position: relative;
     z-index: 1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 16px;
-    width: 1120px;
-    margin: 80px auto 30px;
+    max-width: $container-width;
+    margin: 0px auto 30px;
 
     li {
         margin-bottom: 60px;
@@ -24,6 +24,7 @@
 }
 
 .project-summary {
+    font-family: $ibm-plex;
     font-size: 12px;
     margin-left: 20px;
     margin-top: 20px;
@@ -46,7 +47,6 @@
 .single-projects .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding-top: 160px;
 
     .col__left,
     .col__right {
@@ -61,6 +61,6 @@
 
     .col__right {
         grid-column: 3/5;
-        padding: 30px 100px;
+        padding: 30px 70px;
     }
 }

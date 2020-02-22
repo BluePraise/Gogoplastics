@@ -1,0 +1,41 @@
+nav.masthead {
+    max-width: $container-width;
+    margin: 0 auto;
+}
+
+nav.masthead ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+li.menu-item.current-menu-item a:after {
+    content:'';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    top: -7px;
+}
+
+li.menu-item a {
+    display: block;
+    font-family: $space-mono;
+    font-size: 12px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    line-height: 36px;
+}
+
+li.nav-home a {
+    visibility: hidden;
+    &:before {
+        content: "";
+        visibility: visible;
+        display: block;
+        background-image: url(img/logo-small-black.png);
+        width: 92px;
+        height: 36px;
+        background-repeat: no-repeat;
+    }
+}
