@@ -16,6 +16,8 @@
     // 02 Widget Theme Support (mainly in footer)
     add_theme_support( 'customize-selective-refresh-widgets' );
     add_image_size( 'project-thumb', 324, 231 ); // 300 pixels wide (and unlimited height)
+    add_image_size( 'project-thumb-medium', 500, 350 ); // 300 pixels wide (and unlimited height)
+    add_image_size( 'project-thumb-small', 400, 300 ); // 300 pixels wide (and unlimited height)
 
 
     // 03 Widget Theme Support (mainly in footer)
