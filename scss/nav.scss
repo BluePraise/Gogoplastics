@@ -1,4 +1,6 @@
 nav.masthead {
+    position: relative;
+    z-index: 999;
     max-width: $container-width;
     margin: 0 auto;
 }
