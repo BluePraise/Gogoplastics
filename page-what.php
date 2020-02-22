@@ -25,20 +25,33 @@ get_header();
             ?>
         <div class="grid">
 
-            <div class="col__left">
+            <div class="top col__left">
                 <figure>
                     <img src="<?php echo esc_url( $image_left['url'] ); ?>" alt="<?php //echo esc_attr( $col_left_photo['alt'] ); ?>" />
                     <figcaption class="image-caption"><?php echo $caption_left; ?></figcaption>
                 </figure>
             </div>
 
-            <div class="col__right">
+            <div class="top col__right">
                 <figure>
                     <img src="<?php echo esc_url( $image_right['url'] ); ?>" alt="<?php //echo esc_attr( $col_left_photo['alt'] ); ?>" />
                     <figcaption class="image-caption"><?php echo $caption_right; ?></figcaption>
                 </figure>
             </div>
-    </div>
+
+            <?php
+                $content_columns    = get_field('content_columns');
+                $content_col_left   = $content_columns["content_column_left"];
+                $content_col_right  = $content_columns ["content_column_right"];
+            ?>
+
+            <div class="content col__left">
+                <?php echo $content_col_left;?>
+            </div>
+            <div class="content col__right">
+                <?php echo $content_col_right; ?>
+            </div>
+        </div>
         <?php
                 endwhile;
             endif;
