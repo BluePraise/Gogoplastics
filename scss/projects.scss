@@ -6,7 +6,7 @@
 .projects-list {
     @extend .reset-list-style;
     position: relative;
-    z-index: -1;
+    z-index: 1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 16px;
