@@ -11,6 +11,12 @@
     margin: auto;
 }
 
+
+figure.featured-image__full {
+    grid-column: 1/5;
+}
+
+
 .intro {
     display: flex;
     justify-content: center;

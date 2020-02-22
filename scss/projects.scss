@@ -3,6 +3,8 @@
     margin-top: 160px;
 }
 
+
+
 .projects-list {
     @extend .reset-list-style;
     position: relative;
@@ -18,12 +20,16 @@
         a {
             display: block;
         }
-        .project-summary {
-            font-size: 12px;
-            margin-left: 20px;
-            margin-top: 20px;
-        }
     }
+}
+
+.project-summary {
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 20px;
+    letter-spacing: 0.12px;
+    line-height: 16px;
+    width: 260px;
 }
 
 .projects .page-content {
@@ -36,3 +42,9 @@
 /* ---------------------
 * Project Single
 * ---------------------*/
+
+.single-projects .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 160px;
+}

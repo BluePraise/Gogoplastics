@@ -312,7 +312,6 @@ object {
   max-width: 100%;
 }
 
-figcaption,
 .wp-caption-text {
   color: #6d6d6d;
   display: block;
@@ -5658,6 +5657,10 @@ li > ol {
   margin: auto;
 }
 
+figure.featured-image__full {
+  grid-column: 1/5;
+}
+
 .intro {
   display: -webkit-box;
   display: flex;
@@ -5751,10 +5754,13 @@ input[type="text"].newsletter {
   display: block;
 }
 
-.projects-list li .project-summary {
+.project-summary {
   font-size: 12px;
   margin-left: 20px;
   margin-top: 20px;
+  letter-spacing: 0.12px;
+  line-height: 16px;
+  width: 260px;
 }
 
 .projects .page-content {
@@ -5768,4 +5774,9 @@ input[type="text"].newsletter {
 /* ---------------------
 * Project Single
 * ---------------------*/
+.single-projects .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 160px;
+}
 /*# sourceMappingURL=style.css.map */
