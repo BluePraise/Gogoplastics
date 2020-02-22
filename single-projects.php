@@ -31,6 +31,7 @@
                 </figure>
                 <div class="page-content"><?php the_content(); ?></div>
             </div>
+
             <div class="col__right">
                 <figure>
                     <img src="<?php echo esc_url( $col_right_photo ); ?>" alt="<?php //echo esc_attr( $col_left_photo['alt'] ); ?>" />
