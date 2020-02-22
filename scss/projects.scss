@@ -1,5 +1,6 @@
 .projects {
     margin-bottom: 100px;
+    margin-top: 160px;
 }
 
 .projects-list {
@@ -10,7 +11,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 16px;
     width: 1120px;
-    margin: -200px auto 30px;
+    margin: 80px auto 30px;
 
     li {
         margin-bottom: 60px;
