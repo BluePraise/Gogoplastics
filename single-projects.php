@@ -31,7 +31,6 @@
                     <img src="<?php echo esc_url( $col_left_photo ); ?>" alt="<?php //echo esc_attr( $col_left_photo['alt'] ); ?>" />
                     <figcaption class="project-summary"><?php echo $col_left_summary; ?></figcaption>
                 </figure>
-                <div class="page-content"><?php the_content(); ?></div>
             </div>
 
             <div class="col__right">
@@ -40,6 +39,8 @@
                     <figcaption class="project-summary"><?php echo $col_right_summary; ?></figcaption>
                 </figure>
             </div>
+
+            <div class="page-content"><?php the_content(); ?></div>
 
         <?php
             // ENDS FOR THE LOOP

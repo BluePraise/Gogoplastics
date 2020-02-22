@@ -44,6 +44,7 @@
 * Project Single
 * ---------------------*/
 .single-projects .container {
+  font-family: "IBM Plex Mono", monospace;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -63,6 +64,11 @@
 
 .single-projects .container .col__right {
   grid-column: 3/5;
-  padding: 30px 70px;
+  padding: 24px 0 50px 70px;
+}
+
+.single-projects .container .page-content {
+  width: 100%;
+  grid-column: 1/3;
 }
 /*# sourceMappingURL=projects.css.map */

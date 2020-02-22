@@ -45,6 +45,7 @@
 * ---------------------*/
 
 .single-projects .container {
+    font-family: $ibm-plex;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
@@ -61,6 +62,11 @@
 
     .col__right {
         grid-column: 3/5;
-        padding: 30px 70px;
+        padding: 24px 0 50px 70px;
+    }
+
+    .page-content {
+        width: 100%;
+        grid-column: 1/3;
     }
 }
