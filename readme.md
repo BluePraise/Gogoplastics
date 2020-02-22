@@ -9,5 +9,6 @@ The classic block editor provided by WordPress.
 
 ## Sources used
 
-IBM Plex Mono
-Space Mono
+- IBM Plex Mono
+- Space Mono
+- LTC Italian Old Style
