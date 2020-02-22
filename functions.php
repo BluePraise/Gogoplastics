@@ -190,6 +190,7 @@
     }
     add_filter( 'post_updated_messages', 'gogo_updated_messages' );
 
+
     // Add Actions
 
     // 01 custom logo functionality
@@ -209,6 +210,15 @@
 
     // 06 hook for custom posttypes
     add_action( 'init', 'projects_posttype' );
+    add_action( 'wp', 'deregister_contact_form');
+
+    function deregister_contact_form() {
+
+        if ( ! is_page( 'contact' ) ) {
+          remove_action('wp_enqueue_scripts', 'wpcf7_enqueue_scripts');
+        }
+    }
+
 
 
     // Remove Actions
