@@ -5607,6 +5607,7 @@ a.to-the-top > * {
 .container {
   width: 1100px;
   margin: auto;
+  padding-top: 110px;
 }
 
 .grid {
@@ -5645,6 +5646,7 @@ h2.page-title {
   width: 500px;
   z-index: 2;
   margin-left: 160px;
+  margin-top: 90px;
   font-size: 151px;
   text-transform: uppercase;
   font-weight: 100;
@@ -5725,6 +5727,46 @@ h2.page-title {
   color: #020F02;
 }
 
+.content.col__left p,
+.content.col__right p {
+  width: 100%;
+}
+
+.material_attribute {
+  margin-bottom: 60px;
+}
+
+.gallery_three_images {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-bottom: 100px;
+}
+
+.gallery_three_images .image--one {
+  width: 230px;
+}
+
+.gallery_three_images .image--two {
+  width: 409px;
+}
+
+.gallery_three_images .image--three {
+  width: 154px;
+}
+
+.material_attribute figure {
+  width: 834px;
+  margin-top: 140px;
+}
+
+.image--center {
+  margin: 0 auto;
+}
+
 /* FOOTER */
 footer {
   display: -webkit-box;
@@ -5771,6 +5813,8 @@ nav.masthead ul {
   display: flex;
   -webkit-box-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
 }
 
 li.menu-item.current-menu-item a:after {

@@ -8,6 +8,7 @@ nav.masthead {
 nav.masthead ul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 li.menu-item.current-menu-item a:after {

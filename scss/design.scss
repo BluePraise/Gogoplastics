@@ -9,6 +9,7 @@
 .container {
     width: $container-width;
     margin: auto;
+    padding-top: 110px;
 }
 
 .grid {
@@ -46,6 +47,7 @@ h2.page-title {
     width: 500px;
     z-index: 2;
     margin-left: 160px;
+    margin-top: 90px;
     font-size: 151px;
     text-transform: uppercase;
     font-weight: 100;
@@ -116,6 +118,33 @@ h2.page-title {
     font-size: 20px;
     line-height: 24px;
     color: #020F02;
+}
+
+.content.col__left p,
+.content.col__right p {
+    width: 100%;
+}
+
+.material_attribute {
+    margin-bottom: 60px;
+}
+
+.gallery_three_images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    .image--one {   width: 230px; }
+    .image--two {   width: 409px; }
+    .image--three { width: 154px; }
+}
+
+.material_attribute figure {
+    width: 834px;
+    margin-top: 140px;
+}
+.image--center {
+    margin: 0 auto;
 }
 
 /* FOOTER */
