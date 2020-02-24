@@ -5631,7 +5631,28 @@ figure.featured-image__full {
   margin-bottom: 500px;
 }
 
+.intro .flexslider {
+  width: 100vw;
+  position: relative;
+  height: 600px;
+  top: 90px;
+}
+
+.intro .flexslider .slide img {
+  height: 600px;
+  width: 100%;
+}
+
+.logo {
+  z-index: 1;
+  position: absolute;
+  top: 280px;
+  width: 270px;
+}
+
 h1.intro--title {
+  position: relative;
+  top: 160px;
   width: 664px;
   text-align: center;
   font-size: 40px;
