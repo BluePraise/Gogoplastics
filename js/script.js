@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
-    feather.replace()
+    feather.replace();
+
+    $('.flexslider').flexslider({
+        animation: "slide"
+    });
 
 });

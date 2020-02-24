@@ -15,6 +15,7 @@
 
     // 02 Widget Theme Support (mainly in footer)
     add_theme_support( 'customize-selective-refresh-widgets' );
+    add_image_size( 'slider-fullwidth', 2048, 600 ); // 300 pixels wide (and unlimited height)
     add_image_size( 'project-thumb', 324, 231 ); // 300 pixels wide (and unlimited height)
     add_image_size( 'project-thumb-medium', 500, 350 ); // 300 pixels wide (and unlimited height)
     add_image_size( 'project-thumb-small', 400, 300 ); // 300 pixels wide (and unlimited height)
@@ -67,16 +68,8 @@
     // 03 Load styles
     function gogo_styles() {
 
-            // Custom CSS
-            wp_register_style( 'gogo', get_template_directory_uri() . '/style.css' );
-            wp_register_style( 'gogo_projects_css', get_template_directory_uri() . 'css/projects.css' );
-
-            // Register CSS
-            wp_enqueue_style( 'gogo' );
-            if ( is_page( 'Projects Template' ) ) {
-                wp_enqueue_style( 'gogo_projects_css' );
-            }
-
+        // Custom CSS // This thing doesn't work anymore, after I added flexslider.
+        wp_register_style( 'gogo', get_template_directory_uri() . '/style.css' );
     }
 
     // 04 Load scripts
@@ -88,13 +81,14 @@
 
 
         // Goes in footer
-
         wp_register_script( 'gogo_jquery', 'https://code.jquery.com/jquery-3.4.1.js', array(), '3.4.1', true);
-        wp_register_script( 'gogo_scripts', get_template_directory_uri() .  '/js/script.js', array('jquery'), '0.0', true);
+        wp_register_script( 'flexslider', get_template_directory_uri() . '/js/jquery.flexslider-min.js', array('jquery'), '', true);
+        wp_register_script( 'gogo_scripts', get_template_directory_uri() . '/js/script.js', array('jquery'), '0.0', true);
 
         // wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );
         wp_enqueue_script( 'feather_icons' );
         wp_enqueue_script( 'gogo_jquery' );
+        wp_enqueue_script( 'flexslider' );
         wp_enqueue_script( 'gogo_scripts' );
 
     }

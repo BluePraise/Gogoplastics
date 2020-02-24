@@ -4,7 +4,12 @@
     get_header();
 ?>
 
-<div class="intro">
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/flexslider.css">
+
+<div class="intro flex-slider">
+    <ul class="slides">
+
+    </ul>
     <figure class="logo">
         <?php
         $custom_logo_id = get_theme_mod( 'custom_logo' );
