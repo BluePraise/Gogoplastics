@@ -32,6 +32,7 @@ li.menu-item a {
 
 li.nav-home a {
     visibility: hidden;
+    height: 36px;
     &:before {
         content: "";
         visibility: visible;
@@ -40,5 +41,7 @@ li.nav-home a {
         width: 92px;
         height: 36px;
         background-repeat: no-repeat;
+        background-position: center bottom;
+        height: 36px;
     }
 }

@@ -5838,6 +5838,7 @@ li.menu-item a {
 
 li.nav-home a {
   visibility: hidden;
+  height: 36px;
 }
 
 li.nav-home a:before {
@@ -5848,5 +5849,7 @@ li.nav-home a:before {
   width: 92px;
   height: 36px;
   background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 36px;
 }
 /*# sourceMappingURL=style.css.map */
