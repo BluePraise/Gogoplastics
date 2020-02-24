@@ -5806,6 +5806,7 @@ nav.masthead {
   z-index: 999;
   max-width: 1100px;
   margin: 0 auto;
+  padding: 20px 0;
 }
 
 nav.masthead ul {
