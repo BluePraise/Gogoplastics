@@ -9,7 +9,7 @@
     <?php
         if ( have_posts() ) : ?>
             <h2 class="page-title"><?php the_title();?></h2>
-            <div class="content-container">
+            <div class="content-container container">
 
 
             <?php while ( have_posts() ) :

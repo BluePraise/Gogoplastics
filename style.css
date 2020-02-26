@@ -5667,6 +5667,8 @@ h1.intro--title {
 
 h2.page-title {
   position: absolute;
+  word-break: break-word;
+  display: inline-block;
   top: -30px;
   width: 500px;
   z-index: 2;
@@ -5824,6 +5826,186 @@ footer p {
 
 input[type="text"].newsletter {
   height: 48px;
+}
+
+.wpforms-field-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 90px);
+  grid-gap: 10px;
+  grid-template-areas: "a1 a2 a3" "b1 b2 b3" "c1 c2 b3" "d1 d2 .";
+}
+
+.input-customer {
+  grid-area: a1;
+}
+
+.input-name {
+  grid-area: b1;
+}
+
+.input-email {
+  grid-area: c1;
+}
+
+.input-phone {
+  grid-area: d1;
+}
+
+.input-address {
+  grid-area: a2;
+}
+
+.input-zip {
+  grid-area: b2;
+}
+
+.input-city {
+  grid-area: c2;
+}
+
+.input-country {
+  grid-area: d2;
+}
+
+.input-sample {
+  grid-area: b3;
+}
+
+.input-sample br {
+  display: none;
+}
+
+.input-sample ul.wpforms-image-choices li.choice-2,
+.input-sample ul.wpforms-image-choices li.choice-3 {
+  margin-top: 10px;
+}
+
+.input-sample .wpforms-image-choices-label {
+  font-family: "Space Mono", monospace;
+  font-size: 12px !important;
+  text-transform: uppercase !important;
+  font-weight: 300 !important;
+}
+
+div.wpforms-container-full .wpforms-form input.wpforms-field-medium,
+div.wpforms-container-full .wpforms-form select.wpforms-field-medium,
+div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium {
+  max-width: 100% !important;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-field-label {
+  font-size: 12px !important;
+  text-transform: uppercase;
+  font-weight: 300 !important;
+}
+
+div.wpforms-container-full .wpforms-form input[type=date],
+div.wpforms-container-full .wpforms-form input[type=datetime],
+div.wpforms-container-full .wpforms-form input[type=datetime-local],
+div.wpforms-container-full .wpforms-form input[type=email],
+div.wpforms-container-full .wpforms-form input[type=month],
+div.wpforms-container-full .wpforms-form input[type=number],
+div.wpforms-container-full .wpforms-form input[type=password],
+div.wpforms-container-full .wpforms-form input[type=range],
+div.wpforms-container-full .wpforms-form input[type=search],
+div.wpforms-container-full .wpforms-form input[type=tel],
+div.wpforms-container-full .wpforms-form input[type=text],
+div.wpforms-container-full .wpforms-form input[type=time],
+div.wpforms-container-full .wpforms-form input[type=url],
+div.wpforms-container-full .wpforms-form input[type=week],
+div.wpforms-container-full .wpforms-form select,
+div.wpforms-container-full .wpforms-form textarea {
+  background-color: #ababab !important;
+  height: 48px !important;
+  width: 325px !important;
+}
+
+div.wpforms-container-full .wpforms-form input[type=date]::-webkit-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=datetime]::-webkit-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=datetime-local]::-webkit-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=email]::-webkit-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=month]::-webkit-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=number]::-webkit-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=password]::-webkit-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=range]::-webkit-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=search]::-webkit-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=tel]::-webkit-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=text]::-webkit-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=time]::-webkit-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=url]::-webkit-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=week]::-webkit-input-placeholder,
+div.wpforms-container-full .wpforms-form select::-webkit-input-placeholder,
+div.wpforms-container-full .wpforms-form textarea::-webkit-input-placeholder {
+  line-height: normal;
+  color: #000 !important;
+  font-family: "Space Mono", monospace;
+  font-size: 12px !important;
+  text-transform: uppercase;
+  font-weight: 300 !important;
+}
+
+div.wpforms-container-full .wpforms-form input[type=date]:-ms-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=datetime]:-ms-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=datetime-local]:-ms-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=email]:-ms-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=month]:-ms-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=number]:-ms-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=password]:-ms-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=range]:-ms-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=search]:-ms-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=tel]:-ms-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=text]:-ms-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=time]:-ms-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=url]:-ms-input-placeholder,
+div.wpforms-container-full .wpforms-form input[type=week]:-ms-input-placeholder,
+div.wpforms-container-full .wpforms-form select:-ms-input-placeholder,
+div.wpforms-container-full .wpforms-form textarea:-ms-input-placeholder {
+  line-height: normal;
+  color: #000 !important;
+  font-family: "Space Mono", monospace;
+  font-size: 12px !important;
+  text-transform: uppercase;
+  font-weight: 300 !important;
+}
+
+div.wpforms-container-full .wpforms-form input[type=date]::-moz-placeholder,
+div.wpforms-container-full .wpforms-form input[type=datetime]::-moz-placeholder,
+div.wpforms-container-full .wpforms-form input[type=datetime-local]::-moz-placeholder,
+div.wpforms-container-full .wpforms-form input[type=email]::-moz-placeholder,
+div.wpforms-container-full .wpforms-form input[type=month]::-moz-placeholder,
+div.wpforms-container-full .wpforms-form input[type=number]::-moz-placeholder,
+div.wpforms-container-full .wpforms-form input[type=password]::-moz-placeholder,
+div.wpforms-container-full .wpforms-form input[type=range]::-moz-placeholder,
+div.wpforms-container-full .wpforms-form input[type=search]::-moz-placeholder,
+div.wpforms-container-full .wpforms-form input[type=tel]::-moz-placeholder,
+div.wpforms-container-full .wpforms-form input[type=text]::-moz-placeholder,
+div.wpforms-container-full .wpforms-form input[type=time]::-moz-placeholder,
+div.wpforms-container-full .wpforms-form input[type=url]::-moz-placeholder,
+div.wpforms-container-full .wpforms-form input[type=week]::-moz-placeholder,
+div.wpforms-container-full .wpforms-form select::-moz-placeholder,
+div.wpforms-container-full .wpforms-form textarea::-moz-placeholder {
+  line-height: revert;
+  /* Reset to the value from the user-agent stylesheet. */
+  color: #000 !important;
+  font-family: "Space Mono", monospace;
+  font-size: 12px !important;
+  text-transform: uppercase;
+  font-weight: 300 !important;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-required-label {
+  display: none;
+}
+
+div.wpforms-container-full .wpforms-form button[type="submit"] {
+  font-family: 'Space Mono';
+  text-transform: uppercase;
+  color: #000 !important;
+  background: #fff !important;
+  font-weight: 300;
+  border: 1px solid !important;
+  font-size: 12px !important;
 }
 
 nav.masthead {
