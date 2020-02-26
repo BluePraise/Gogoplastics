@@ -16,6 +16,13 @@
     display: grid;
 }
 
+// this container only is needed for regular pages.
+// the .container class already provides for a 110px height.
+// not sure yet how to fix this.
+.content-container {
+    padding-top: 310px;
+}
+
 
 figure.featured-image__full {
     grid-column: 1/5;

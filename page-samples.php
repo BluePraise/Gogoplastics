@@ -1,6 +1,6 @@
 <?php
 
-    /* template name: Questions Template */
+    /* template name: Samples Template */
     get_header();
 ?>
 
@@ -9,6 +9,8 @@
     <?php
         if ( have_posts() ) : ?>
             <h2 class="page-title"><?php the_title();?></h2>
+            <div class="content-container">
+
 
             <?php while ( have_posts() ) :
                 the_post();
@@ -19,7 +21,7 @@
         endif;
 
         ?>
-
+    </div>
 </main>
 
 <?php get_footer(); ?>

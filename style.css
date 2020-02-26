@@ -5614,6 +5614,10 @@ a.to-the-top > * {
   display: grid;
 }
 
+.content-container {
+  padding-top: 310px;
+}
+
 figure.featured-image__full {
   grid-column: 1/5;
 }
