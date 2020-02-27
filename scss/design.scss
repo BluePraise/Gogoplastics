@@ -142,7 +142,6 @@ h2.page-title {
     color: #020F02;
     text-transform: uppercase;
     padding-bottom: 3px;
-    border-bottom: 2px dashed #020F02;
     margin-bottom: 20px;
 }
 
@@ -181,6 +180,34 @@ h2.page-title {
     margin: 0 auto;
 }
 
+hr {
+    margin: 0;
+}
+
+.dotted {
+    height: 2px;
+    width: 100%;
+    border: none;
+    background-image: url(img/dot.svg);
+    background-size: 7px 2px;
+    background-position: left;
+}
+
+.dotted-title {
+    margin-bottom: 20px;
+}
+
+.content h3:after,
+.dotted-title:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    border: none;
+    background-image: url(img/dot.svg);
+    background-size: 7px 2px;
+    background-position: left;
+}
 /* FOOTER */
 
 
@@ -198,8 +225,8 @@ footer {
 }
 
 footer h4 {
-    border-bottom: 2px dashed #020F02;
-    margin-bottom: 10px;
+    // border-bottom: 2px dashed #020F02;
+    // margin-bottom: 10px;
 }
 
 footer h4,
@@ -211,6 +238,7 @@ footer p {
 
 footer p {
     line-height: 1.3;
+    margin-bottom: 0;
 }
 
 input[type="text"].newsletter {
