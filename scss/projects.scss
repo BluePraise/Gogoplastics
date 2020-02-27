@@ -24,7 +24,7 @@
 }
 
 .project-summary {
-    font-family: $ibm-plex;
+    font-family: $mono;
     font-size: 12px;
     margin-left: 20px;
     margin-top: 20px;
@@ -45,7 +45,7 @@
 * ---------------------*/
 
 .single-projects .container {
-    font-family: $ibm-plex;
+    font-family: $mono;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 

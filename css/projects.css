@@ -23,7 +23,7 @@
 }
 
 .project-summary {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Space Mono", monospace;
   font-size: 12px;
   margin-left: 20px;
   margin-top: 20px;
@@ -44,7 +44,7 @@
 * Project Single
 * ---------------------*/
 .single-projects .container {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Space Mono", monospace;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }

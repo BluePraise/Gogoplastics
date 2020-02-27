@@ -24,7 +24,7 @@ li.menu-item.current-menu-item a:after {
 
 li.menu-item a {
     display: block;
-    font-family: $space-mono;
+    font-family: $mono;
     font-size: 12px;
     text-transform: uppercase;
     vertical-align: middle;
@@ -44,5 +44,51 @@ li.nav-home a {
         background-repeat: no-repeat;
         background-position: center bottom;
         height: 36px;
+    }
+}
+
+/* Mobile Nav */
+#hamburger {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+
+    .h-wrapper {
+        padding: 16px 0
+    }
+
+    #hamburger {
+        display: block;
+        width: 30px;
+        margin-left: 16px;
+        span {
+            width: 26px;
+            height: 2px;
+            top: 0;
+            left: 0;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            margin-bottom: 4px;
+            display: block;
+            background: #000;
+        }
+    }
+
+    nav.masthead {
+        padding: 0;
+    }
+    nav.masthead ul {
+        display: none;
+    }
+
+    .logo {
+        top: 200px;
+    }
+
+    .intro {
+        margin-bottom: 140px;
     }
 }

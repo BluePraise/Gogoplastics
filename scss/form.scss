@@ -55,7 +55,7 @@
     }
 
     .wpforms-image-choices-label {
-        font-family: $space-mono;
+        font-family: $mono;
         font-size: 12px !important;
         text-transform: uppercase !important;
         font-weight: 300 !important;
@@ -99,7 +99,7 @@ div.wpforms-container-full .wpforms-form textarea {
     &::-webkit-input-placeholder {
         line-height: normal;
         color: #000 !important;
-        font-family: $space-mono;
+        font-family: $mono;
         font-size: 12px !important;
         text-transform: uppercase;
         font-weight: 300 !important;
@@ -108,7 +108,7 @@ div.wpforms-container-full .wpforms-form textarea {
     &:-ms-input-placeholder {
         line-height: normal;
         color: #000 !important;
-        font-family: $space-mono;
+        font-family: $mono;
         font-size: 12px !important;
         text-transform: uppercase;
         font-weight: 300 !important;
@@ -117,7 +117,7 @@ div.wpforms-container-full .wpforms-form textarea {
     &::-moz-placeholder {
         line-height: revert; /* Reset to the value from the user-agent stylesheet. */
         color: #000 !important;
-        font-family: $space-mono;
+        font-family: $mono;
         font-size: 12px !important;
         text-transform: uppercase;
         font-weight: 300 !important;
