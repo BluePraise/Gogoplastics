@@ -7,7 +7,7 @@
 
 
 .container {
-    width: $container-width;
+    max-width: $container-width;
     margin: auto;
     padding-top: 110px;
 }
@@ -238,7 +238,7 @@ footer p {
 
 footer p {
     line-height: 1.3;
-    margin-bottom: 0;
+    margin-bottom: 6px;
 }
 
 input[type="text"].newsletter {
@@ -247,6 +247,12 @@ input[type="text"].newsletter {
 
 
 @media (max-width: 768px) {
+
+    .container {
+        padding-top: 0;
+        margin: 0 16px;
+    }
+
     h1.intro--title {
         top: 0px;
         font-size: 18px;
@@ -258,10 +264,39 @@ input[type="text"].newsletter {
         top: 0px;
         margin: 0;
     }
+    h2.page-title {
+        margin: 0 0 37px 0;
+        word-break: normal;
+        position: relative;
+        top: 0;
+        font-size: 40px;
+        width: 100%;
+        text-align: left;
+
+    }
+
+    .col__left,
+    .col__right {
+        &.top {
+            display: none;
+        }
+        margin: 0px 16px;
+        padding: 0;
+        figure {
+            margin-bottom: 60px;
+        }
+    }
+    .what-we-do .grid .content.col__right,
+    .materials .grid .content.col__right,
+    .what-we-do .grid .content.col__left,
+    .materials .grid .content.col__left {
+        grid-column: 1/5;
+    }
 
     footer {
         flex-direction: column;
         padding: 0 16px;
+        margin-top: 80px;
     }
     .footer--col {
         width: 100%;
