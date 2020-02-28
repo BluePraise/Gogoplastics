@@ -5816,7 +5816,8 @@ hr {
 }
 
 .content h3:after,
-.dotted-title:after {
+.dotted-title:after,
+.wpforms-field-label:after {
   content: '';
   display: block;
   height: 2px;
@@ -6009,7 +6010,6 @@ div.wpforms-container-full .wpforms-form select,
 div.wpforms-container-full .wpforms-form textarea {
   background-color: #ababab !important;
   height: 48px !important;
-  width: 325px !important;
 }
 
 div.wpforms-container-full .wpforms-form input[type=date]::-webkit-input-placeholder,
