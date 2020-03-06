@@ -17,14 +17,19 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-        <div class="wrapper">
-        <!-- nav -->
-        <div class="h-wrapper">
-            <div id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+        <header class="site-header">
+            <div class="wrapper">
+                <!-- nav -->
+                <div class="h-wrapper">
+                    <button class="hamburger hamburger--slider js-hamburger">
+                        <span class="hamburger__box"><span class="hamburger__inner"></span></span>
+                    </button>
+                    <a class="site-header__logo" href="http://gogoplastics.localhost:7888/">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/logo-small-black.png" alt="">
+                    </a>
+                </div>
+                <?php gogo_nav(); ?>
             </div>
-        </div>
-        <?php gogo_nav(); ?>
+        </header>
 
+        <div class="wrapper">

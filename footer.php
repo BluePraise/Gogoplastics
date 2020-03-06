@@ -1,5 +1,4 @@
-<footer>
-
+<footer class="footer">
     <div class="footer--col details">
         <h4 class="dotted-title">Interested?</h4>
         <!-- <hr class="dotted"> -->
@@ -19,11 +18,9 @@
         <a href="https://instagram.com/magalielindamatters"><i data-feather="instagram"></i></a>
         <p></p>
     </div>
-
 </footer>
 
 </div> <!-- End of .wrapper -->
-
 
 		<?php wp_footer(); ?>
 
