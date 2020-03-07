@@ -29,8 +29,7 @@ $(document).ready(function() {
     }
     fixedHeader();
 
-    document.querySelector(".hamburger").addEventListener("click", function() {
-        this.classList.toggle("is-active");
-        header.classList.toggle("show-menu");
+    $(".hamburger").on("click", function() {
+        $(header).toggleClass("show-menu");
     });
 });
