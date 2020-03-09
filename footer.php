@@ -4,13 +4,14 @@
         <!-- <hr class="dotted"> -->
         <p>Please contact us at</p>
         <p><a href="mailto:info@gogoplastics.com">info@gogoplastics.com</a></p>
-        <p><a href="tel:+31 6 24 52 43 30">+31 6 24 52 43 30</p>
+        <p><a href="tel:+31 6 24 52 43 30">+31 6 24 52 43 30</a>
 
     </div>
     <div class="footer--col subscribe">
 
         <h4 class="dotted-title">Subscribe newsletter</h4>
         <p><input class="newsletter" type="text"></p>
+        <a href="#" class="btn">Verstuur</a>
 
     </div>
     <div class="footer--col legal">

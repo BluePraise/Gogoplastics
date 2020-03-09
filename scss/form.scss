@@ -128,7 +128,9 @@ div.wpforms-container-full .wpforms-form .wpforms-required-label {
     display: none;
 }
 
-div.wpforms-container-full .wpforms-form button[type="submit"] {
+div.wpforms-container-full .wpforms-form button[type="submit"],
+a.btn,
+button[type="submit"] {
     font-family: 'Space Mono';
     text-transform: uppercase;
     color: #000 !important;
@@ -136,4 +138,10 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
     font-weight: 300;
     border: 1px solid !important;
     font-size: 12px !important;
+}
+
+a.btn {
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
 }
