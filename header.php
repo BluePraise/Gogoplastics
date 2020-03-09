@@ -29,14 +29,6 @@
                     </a>
                 </div>
                 <div class="menu-wrap">
-                    <div class="menu-wrap__top">
-                        <button class="hamburger is-active">
-                            <span class="hamburger__box"><span class="hamburger__inner"></span></span>
-                        </button>
-                        <a class="menu-wrap__logo" href="/">
-                            <img src="<?php echo get_template_directory_uri() ?>/img/logo-small-black.png" alt="">
-                        </a>
-                    </div>
                     <?php gogo_nav(); ?>
                 </div>
             </div>

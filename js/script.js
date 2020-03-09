@@ -30,6 +30,9 @@ $(document).ready(function() {
     fixedHeader();
 
     $(".hamburger").on("click", function() {
-        $(header).toggleClass("show-menu");
+        $(this).toggleClass("is-active");
+        $(header)
+            .find(".menu-wrap")
+            .slideToggle();
     });
 });

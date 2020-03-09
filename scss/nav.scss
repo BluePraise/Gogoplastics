@@ -4,18 +4,6 @@
     max-width: $container-width;
     margin: 0 auto;
     padding: 20px 0;
-    &__logo {
-        display: none;
-        position: absolute;
-        left: 50%;
-        top: 30px;
-        transform: translate(-50%, -50%);
-    }
-    &__top {
-        display: none;
-        align-items: center;
-        background: white;
-    }
 }
 
 nav.masthead {
@@ -187,12 +175,10 @@ li.nav-home a {
 
     .menu-wrap {
         padding: 0;
-        visibility: hidden;
-        transform: translateY(-200%);
-        transition: 0.3s;
         position: absolute;
-        top: 20px;
+        top: 100%;
         width: 100%;
+        display: none;
     }
 
     .masthead {
@@ -259,12 +245,6 @@ li.nav-home a {
                 visibility: visible;
                 opacity: 1;
                 transform: translate(0, 0);
-                &__logo {
-                    display: inline-block;
-                }
-                &__top {
-                    display: flex;
-                }
             }
             .masthead {
                 height: auto;
