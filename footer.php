@@ -3,8 +3,8 @@
         <h4 class="dotted-title">Interested?</h4>
         <!-- <hr class="dotted"> -->
         <p>Please contact us at</p>
-        <p>info@gogoplastics.com</p>
-        <p>+31 6 24 52 43 30</p>
+        <p><a href="mailto:info@gogoplastics.com">info@gogoplastics.com</a></p>
+        <p><a href="tel:+31 6 24 52 43 30">+31 6 24 52 43 30</p>
 
     </div>
     <div class="footer--col subscribe">

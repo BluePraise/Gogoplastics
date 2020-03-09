@@ -165,9 +165,47 @@
         register_post_type( 'projects', $args );
     }
 
+    // 06 Custom Posttypes for projects
+    function product_posttype() {
+
+        $labels = array(
+            'name'               => _x( 'Products', 'post type general name' ),
+            'singular_name'      => _x( 'Product', 'post type singular name' ),
+            'add_new'            => _x( 'Add New', 'product' ),
+            'add_new_item'       => __( 'Add New Product' ),
+            'edit_item'          => __( 'Edit Product' ),
+            'new_item'           => __( 'New Product' ),
+            'all_items'          => __( 'All Products' ),
+            'view_item'          => __( 'View Product' ),
+            'search_items'       => __( 'Search Products' ),
+            'not_found'          => __( 'No products found' ),
+            'not_found_in_trash' => __( 'No products found in the Trash' ),
+            'parent_item_colon'  => '',
+            'menu_name'          => 'Products'
+        );
+
+        $args = array(
+            'labels'             => $labels,
+            'description'        => 'An overview of gogoplastics products',
+            'public'             => true,
+            'publicly_queryable' => true,
+            'show_ui'            => true,
+            'show_in_menu'       => true,
+            'query_var'          => true,
+            'rewrite'            => array( ),
+            'capability_type'    => 'post',
+            'has_archive'        => true,
+            'hierarchical'       => false,
+            'menu_position'      => null,
+            'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+        );
+
+        register_post_type( 'products', $args );
+    }
+
     function gogo_updated_messages( $messages ) {
       global $post, $post_ID;
-      $messages['product'] = array(
+      $messages['project'] = array(
         0 => '',
         1 => sprintf( __('Project updated. <a href="%s">View project</a>'), esc_url( get_permalink($post_ID) ) ),
         2 => __('Custom field updated.'),
@@ -204,6 +242,7 @@
 
     // 06 hook for custom posttypes
     add_action( 'init', 'projects_posttype' );
+    add_action( 'init', 'product_posttype' );
     add_action( 'wp', 'deregister_contact_form');
 
     function deregister_contact_form() {

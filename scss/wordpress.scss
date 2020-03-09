@@ -197,13 +197,13 @@ hr.styled-separator::after {
 
 a {
     color: #000;
-    text-decoration: none;
+    // text-decoration: none;
 }
 
 a:hover,
 a:focus {
+    font-weight: bold;
     cursor: pointer;
-    text-decoration: none;
 }
 
 
