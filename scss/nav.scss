@@ -53,7 +53,7 @@ li.nav-home a {
         content: "";
         visibility: visible;
         display: block;
-        background-image: url(img/logo-small-black.png);
+        background-image: url(img/logo-black.svg);
         width: 92px;
         height: 36px;
         background-repeat: no-repeat;
@@ -251,7 +251,7 @@ li.nav-home a {
     .site-header {
         &.show-menu {
             background: transparent;
-            z-index: 3;
+            z-index: 99;
             .h-wrapper {
                 background: white;
             }
