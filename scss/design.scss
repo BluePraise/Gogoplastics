@@ -36,21 +36,20 @@ figure.featured-image__full {
 
     .flexslider {
         width: 100vw;
-        position: relative;
-        height: 600px;
+        // height: 600px;
         top: 90px;
     }
 }
 
-ul.slides > li {
-    height: 600px;
-    max-width: 100%;
-}
+// ul.slides > li {
+//     height: 600px;
+//     max-width: 100%;
+// }
 
 .logo {
     z-index: 1;
     position: absolute;
-    top: 280px;
+    top: 250px;
     width: 270px;
 }
 
@@ -60,7 +59,7 @@ ul.slides > li {
 
 h1.intro--title {
     position: relative;
-    top: 160px;
+    top: 80px;
     width: 664px;
     text-align: center;
     font-size: 40px;
@@ -251,6 +250,9 @@ hr {
     .container {
         padding-top: 0;
         margin: 0 16px;
+    }
+    .intro .logo {
+        width: 180px;
     }
 
     h1.intro--title {
