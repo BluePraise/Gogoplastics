@@ -81,7 +81,8 @@ body {
     text-rendering: optimizeLegibility;
     width: 100%;
     height: 100%;
-    font-family: 'Space Mono', monospace;
+    font-family: $mono;
+    color: #ED0000;
 }
 
 /* Clearing ---------------------------------- */

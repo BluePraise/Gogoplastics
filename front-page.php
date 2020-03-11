@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/flexslider.css">
     <div class="intro">
 
-        <div class="flexslider container">
+        <div class="flexslider">
         <?php if( have_rows('slider') ): ?>
             <ul class="slides">
 
