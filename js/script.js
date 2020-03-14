@@ -37,4 +37,26 @@ $(document).ready(function() {
             .find(".menu-wrap")
             .slideToggle();
     });
+
+});
+
+$(window).on("load", function() {
+    try {
+        if (localStorage.getItem("cookie-enable") != "1") {
+            setTimeout(function() {
+                $(".cc-window").removeClass("cc-invisible");
+            }, 500);
+        }
+
+        $(".cc-dismiss").click(function() {
+            $(this)
+                .closest(".cc-window")
+                .addClass("cc-invisible");
+
+            localStorage.setItem("cookie-enable", "1");
+        });
+        } catch (e) {
+            return false;
+        }
+
 });

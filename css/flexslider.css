@@ -50,9 +50,11 @@
 .flexslider .slides > li {
   display: none;
   -webkit-backface-visibility: hidden;
+  /* height: 400px; */
 }
 .flexslider .slides img {
   width: 100%;
+  max-width: 100%;
   display: block;
 }
 .flexslider .slides:after {
@@ -95,6 +97,7 @@ html[xmlns] .flexslider .slides {
 .flexslider .slides img {
   height: auto;
   -moz-user-select: none;
+  height: 600px;
 }
 .flex-viewport {
   max-height: 2000px;
