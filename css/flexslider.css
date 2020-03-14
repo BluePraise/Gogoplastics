@@ -97,7 +97,7 @@ html[xmlns] .flexslider .slides {
 .flexslider .slides img {
   height: auto;
   -moz-user-select: none;
-  height: 600px;
+  max-height: 600px;
 }
 .flex-viewport {
   max-height: 2000px;
