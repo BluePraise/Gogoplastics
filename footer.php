@@ -11,7 +11,7 @@
 
         <h4 class="dotted-title">Subscribe newsletter</h4>
         <p><input class="newsletter" type="text"></p>
-        <a href="#" class="btn">Verstuur</a>
+        <a href="#">Verstuur</a>
 
     </div>
     <div class="footer--col legal">

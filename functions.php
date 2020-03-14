@@ -15,7 +15,7 @@
 
     // 02 Widget Theme Support (mainly in footer)
     add_theme_support( 'customize-selective-refresh-widgets' );
-    add_image_size( 'slider-fullwidth', 2880, 1200 ); // Full Width Slider size
+    add_image_size( 'slider-fullwidth', 2880, 1200, array( 'center', 'center' ) ); // 300 pixels wide (and unlimited height)
     add_image_size( 'default-page', 2400, 300, array( 'center', 'center' ) );
     add_image_size( 'small-image', 324, 231, array( 'center', 'center' ) ); // For pages what we do and materials
     add_image_size( 'project-thumb', 324, 231, array( 'center', 'center' ) );

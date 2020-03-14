@@ -1,8 +1,6 @@
-
 /* -------------------------------------------------------------------------- */
 /*  0. CSS Reset
 /* -------------------------------------------------------------------------- */
-
 
 html,
 body {
@@ -56,12 +54,10 @@ blockquote::after {
     content: "";
 }
 
-
 /* -------------------------------------------------------------------------- */
 
 /*  1. Document Setup
 /* -------------------------------------------------------------------------- */
-
 
 html {
     scroll-behavior: smooth;
@@ -73,7 +69,6 @@ html {
     }
 }
 
-
 body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
@@ -81,8 +76,8 @@ body {
     text-rendering: optimizeLegibility;
     width: 100%;
     height: 100%;
-    font-family: $mono;
-    color: #ED0000;
+    font-family: $mono, monospace;
+    color: #ed0000;
 }
 
 /* Clearing ---------------------------------- */
@@ -94,7 +89,6 @@ body {
     display: block;
 }
 
-
 /* Base Transitions -------------------------- */
 
 a,
@@ -102,50 +96,52 @@ path {
     transition: all 0.15s linear;
 }
 
-
-
 /*************************
 *
 * TYPOGRAPHY
 *
 *************************/
 
-h1, h2, h3, h4, h5, {
-
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #ed0000;
 }
 
 h1 {
-
 }
 
 h2 {
-
 }
 
 h3 {
-
 }
 
 h4 {
-
 }
 
 h5 {
+}
 
+p {
+    color: #ed0000;
 }
 
 a {
+    color: #ed0000;
     text-decoration: underline;
 }
 
 blockquote {
-
 }
 
-strong {}
+strong {
+}
 
-i {}
-
+i {
+}
 
 /* Inputs ------------------------------------ */
 
@@ -194,7 +190,8 @@ input[type="checkbox"]:checked::before {
 input,
 textarea,
 button {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica,
+        sans-serif;
     line-height: 1;
 }
 
@@ -208,7 +205,6 @@ code,
 input[type="url"],
 input[type="email"],
 input[type="tel"] {
-
     /*rtl:ignore*/
     direction: ltr;
 }
@@ -377,7 +373,6 @@ ol ol ol {
 }
 
 li {
-
 }
 
 li > ul,
@@ -395,4 +390,3 @@ li > ol {
 .reset-list-style li {
     margin: 0;
 }
-

@@ -3,9 +3,11 @@ $(document).ready(function() {
 
     $(".page-title").addClass("animated fadeInUp");
 
-    $(".flexslider").flexslider({
-        animation: "slide",
-        controlNav: false
+    $(window).on("load", function() {
+        $(".flexslider").flexslider({
+            animation: "slide",
+            controlNav: false
+        });
     });
 
     // When the user scrolls the page, execute myFunction

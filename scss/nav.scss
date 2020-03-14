@@ -19,7 +19,7 @@ li.menu-item.current-menu-item a:after {
     display: block;
     height: 3px;
     width: 100%;
-    background-color: black;
+    background-color: #ED0000;
     position: relative;
     top: -7px;
 }
@@ -41,7 +41,7 @@ li.nav-home a {
         content: "";
         visibility: visible;
         display: block;
-        background-image: url(img/logo-small-black.png);
+        background-image: url(img/logo-red.svg);
         width: 92px;
         height: 36px;
         background-repeat: no-repeat;
@@ -237,7 +237,7 @@ li.nav-home a {
     .site-header {
         &.show-menu {
             background: transparent;
-            z-index: 3;
+            z-index: 99;
             .h-wrapper {
                 background: white;
             }

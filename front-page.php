@@ -4,10 +4,9 @@
     get_header();
 ?>
 
+</div>
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/flexslider.css">
-    <div class="intro">
-
-        <div class="flexslider">
+    <div class="flexslider">
         <?php if( have_rows('slider') ): ?>
             <ul class="slides">
 
@@ -22,6 +21,9 @@
             </ul>
             <?php endif; ?>
         </div>
+        <div class="wrapper">
+    <div class="intro">
+
 
         <figure class="logo">
 
