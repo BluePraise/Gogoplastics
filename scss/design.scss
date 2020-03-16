@@ -38,19 +38,27 @@ figure.featured-image__full {
     margin-top: 90px;
 }
 
+.flexslider-container,
+.flexslider .slides,
+.flex-viewport {
+    height: 80%;
+}
+
+
+.flex-direction-nav {
+    display: none;
+}
+
+
 .logo {
     z-index: 1;
     position: absolute;
     min-width: 200px;
     width: 275px;
     height: auto;
-    // top: calc(15% - 60px);
     transform: translateY(-30px);
 }
 
-.flex-direction-nav {
-    display: none;
-}
 
 h1.intro--title {
     position: relative;
@@ -247,7 +255,7 @@ hr {
         padding-top: 0;
         margin: 0 16px;
     }
-    .intro .logo {
+    .logo {
         width: 180px;
     }
 
@@ -258,7 +266,7 @@ hr {
         width: 290px;
         margin-top: 40px;
     }
-    .intro .flexslider {
+    .flexslider {
         top: 0px;
         margin: 0;
     }
