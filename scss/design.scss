@@ -36,12 +36,13 @@ figure.featured-image__full {
 
 .flexslider {
     margin-top: 90px;
+    height: 80vh;
 }
 
 .flexslider-container,
 .flexslider .slides,
 .flex-viewport {
-    height: 80%;
+    height: 80vh;
 }
 
 
@@ -228,10 +229,6 @@ hr {
             margin-right: 0;
         }
     }
-    h4 {
-        // border-bottom: 2px dashed #020F02;
-        // margin-bottom: 10px;
-    }
 
     h4,
     p {
@@ -256,7 +253,7 @@ hr {
         margin: 0 16px;
     }
     .logo {
-        width: 180px;
+        width: 20%;
     }
 
     h1.intro--title {

@@ -89,6 +89,7 @@ body {
   height: 100%;
   font-family: "Space Mono", monospace, monospace;
   color: #ed0000;
+  overflow-x: hidden;
 }
 
 /* Clearing ---------------------------------- */
@@ -5647,12 +5648,13 @@ figure.featured-image__full {
 
 .flexslider {
   margin-top: 90px;
+  height: 80vh;
 }
 
 .flexslider-container,
 .flexslider .slides,
 .flex-viewport {
-  height: 80%;
+  height: 80vh;
 }
 
 .flex-direction-nav {
@@ -5875,7 +5877,7 @@ hr {
     margin: 0 16px;
   }
   .logo {
-    width: 180px;
+    width: 20%;
   }
   h1.intro--title {
     top: 0px;
@@ -6495,12 +6497,6 @@ li.nav-home a:before {
 }
 
 @media screen and (max-width: 900px) {
-  .cc-btn {
-    white-space: normal;
-  }
-}
-
-@media screen and (max-width: 414px) and (orientation: portrait), screen and (max-width: 736px) and (orientation: landscape) {
   .cc-window {
     width: 80%;
     bottom: 0;
@@ -6512,6 +6508,12 @@ li.nav-home a:before {
     -webkit-box-align: unset;
             align-items: unset;
   }
+  .cc-btn {
+    white-space: normal;
+  }
+}
+
+@media screen and (max-width: 414px) and (orientation: portrait), screen and (max-width: 736px) and (orientation: landscape) {
   .cc-window .cc-compliance {
     -webkit-box-flex: 1;
             flex: 1 1 auto;

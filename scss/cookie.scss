@@ -64,13 +64,6 @@
 }
 
 @media screen and (max-width: 900px) {
-    .cc-btn {
-        white-space: normal;
-    }
-}
-
-@media screen and (max-width: 414px) and (orientation: portrait),
-    screen and (max-width: 736px) and (orientation: landscape) {
     .cc-window {
         width: 80%;
         bottom: 0;
@@ -81,6 +74,13 @@
         -ms-flex-align: unset;
         align-items: unset;
     }
+    .cc-btn {
+        white-space: normal;
+    }
+}
+
+@media screen and (max-width: 414px) and (orientation: portrait),
+    screen and (max-width: 736px) and (orientation: landscape) {
 
     .cc-window .cc-compliance {
         -ms-flex: 1 1 auto;
