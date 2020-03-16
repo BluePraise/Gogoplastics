@@ -5649,6 +5649,7 @@ figure.featured-image__full {
 .flexslider {
   margin-top: 90px;
   height: 80vh;
+  width: 100%;
 }
 
 .flexslider-container,
@@ -6163,6 +6164,30 @@ a.btn {
   max-width: 1100px;
   margin: 0 auto;
   padding: 20px 0;
+}
+
+.menu-wrap {
+  position: relative;
+  z-index: 999;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.menu-wrap__logo {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.menu-wrap__top {
+  display: none;
+  -webkit-box-align: center;
+          align-items: center;
+  background: white;
 }
 
 nav.masthead ul {

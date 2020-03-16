@@ -6,6 +6,26 @@
     padding: 20px 0;
 }
 
+.menu-wrap {
+    position: relative;
+    z-index: 999;
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 20px 0;
+    &__logo {
+        display: none;
+        position: absolute;
+        left: 50%;
+        top: 30px;
+        transform: translate(-50%, -50%);
+    }
+    &__top {
+        display: none;
+        align-items: center;
+        background: white;
+    }
+}
+
 nav.masthead {
     ul {
         display: flex;
