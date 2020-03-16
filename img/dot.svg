@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 3"><defs><style>.cls-1{fill:#020101;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><circle class="cls-1" cx="1.5" cy="1.5" r="1.5"/></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="3px" height="3px" viewBox="0 0 3 3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Oval</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dot" fill="#ED0000" fill-rule="nonzero">
+            <circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle>
+        </g>
+    </g>
+</svg>
