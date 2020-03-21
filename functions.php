@@ -85,14 +85,24 @@
 
         // Goes in footer
         wp_register_script( 'gogo_jquery', 'https://code.jquery.com/jquery-3.4.1.js', array(), '3.4.1', true);
+        wp_register_script( 'matterjs', get_template_directory_uri() . '/js/matter.min.js', array());
+        wp_register_script( 'decomp', get_template_directory_uri() . '/js/decomp.js', true);
+        wp_register_script( 'pathsec', get_template_directory_uri() . '/js/pathsec.js', true);
         wp_register_script( 'flexslider', get_template_directory_uri() . '/js/jquery.flexslider-min.js', array('jquery'), '', true);
         wp_register_script( 'gogo_scripts', get_template_directory_uri() . '/js/script.js', array('jquery'), '0.0', true);
+        wp_register_script( 'gogo_animate', get_template_directory_uri() . '/js/logo-animate.js', array('jquery'), '0.0', true);
 
         // wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );
         wp_enqueue_script( 'feather_icons' );
         wp_enqueue_script( 'gogo_jquery' );
         wp_enqueue_script( 'flexslider' );
         wp_enqueue_script( 'gogo_scripts' );
+        if (is_front_page()) {
+            wp_enqueue_script( 'matterjs' );
+            wp_enqueue_script( 'decomp' );
+            wp_enqueue_script( 'pathsec' );
+            wp_enqueue_script( 'gogo_animate' );
+        }
 
     }
 
