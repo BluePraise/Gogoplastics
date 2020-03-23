@@ -6479,7 +6479,7 @@ li.nav-home a:before {
   width: 100%;
   background: white;
   box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.25);
-  z-index: 2;
+  z-index: 9999;
 }
 
 @media (min-width: 600px) {
