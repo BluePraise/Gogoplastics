@@ -5649,7 +5649,6 @@ figure.featured-image__full {
 .flexslider {
   margin-top: 90px;
   height: 80vh;
-  width: 100%;
 }
 
 .flexslider-container,
@@ -5964,11 +5963,144 @@ hr {
   animation-name: fadeInUp;
 }
 
+@-webkit-keyframes fadeInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0.2;
+  }
+  15% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    padding-bottom: 5px;
+  }
+  30% {
+    -webkit-transform: translateY(-5%);
+            transform: translateY(-5%);
+  }
+  40% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    padding-bottom: 6px;
+  }
+  50% {
+    -webkit-transform: translateY(-7%);
+            transform: translateY(-7%);
+  }
+  70% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    padding-bottom: 7px;
+  }
+  80% {
+    -webkit-transform: translateY(-1%);
+            transform: translateY(-1%);
+  }
+  90% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    padding-bottom: 8px;
+  }
+  95% {
+    -webkit-transform: translateY(-7%);
+            transform: translateY(-7%);
+  }
+  97% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    padding-bottom: 9px;
+  }
+  99% {
+    -webkit-transform: translateY(-3%);
+            transform: translateY(-3%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    padding-bottom: 9px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0.2;
+  }
+  15% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    padding-bottom: 5px;
+  }
+  30% {
+    -webkit-transform: translateY(-5%);
+            transform: translateY(-5%);
+  }
+  40% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    padding-bottom: 6px;
+  }
+  50% {
+    -webkit-transform: translateY(-7%);
+            transform: translateY(-7%);
+  }
+  70% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    padding-bottom: 7px;
+  }
+  80% {
+    -webkit-transform: translateY(-1%);
+            transform: translateY(-1%);
+  }
+  90% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    padding-bottom: 8px;
+  }
+  95% {
+    -webkit-transform: translateY(-7%);
+            transform: translateY(-7%);
+  }
+  97% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    padding-bottom: 9px;
+  }
+  99% {
+    -webkit-transform: translateY(-3%);
+            transform: translateY(-3%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    padding-bottom: 9px;
+    opacity: 1;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
 .animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.home canvas {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
 }
 
 .wpforms-field-container {

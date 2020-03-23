@@ -88,12 +88,15 @@
         wp_register_script( 'flexslider', get_template_directory_uri() . '/js/jquery.flexslider-min.js', array('jquery'), '', true);
         wp_register_script( 'gogo_scripts', get_template_directory_uri() . '/js/script.js', array('jquery'), '0.0', true);
 
+        wp_register_script( 'flexslider', get_template_directory_uri() . '/js/jquery.flexslider-min.js', array('jquery'), '', true);
+        wp_register_script( 'gogo_scripts', get_template_directory_uri() . '/js/script.js', array('jquery'), '0.0', true);
+
+
         // wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );
         wp_enqueue_script( 'feather_icons' );
         wp_enqueue_script( 'gogo_jquery' );
         wp_enqueue_script( 'flexslider' );
         wp_enqueue_script( 'gogo_scripts' );
-
     }
 
     // 05 Navigation

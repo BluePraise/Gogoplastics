@@ -7,7 +7,7 @@
     <?php
 
         if( have_posts() ) : while( have_posts() ) : the_post(); ?>
-            <h2 class="page-title"><?php the_title(); ?></h2>
+            <h2 class="page-title animated fadeInUp"><?php the_title(); ?></h2>
 
             <figure class="featured-image__full">
                 <?php the_post_thumbnail( $size = 'full', $attr = '' ); ?>

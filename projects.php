@@ -13,7 +13,7 @@ get_header();
 
         if( $projects->have_posts() ) :  ?>
 
-            <h2 class="page-title"><?php the_title(); ?></h2>
+            <h2 class="page-title animated fadeInUp"><?php the_title(); ?></h2>
             <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/projects.css">
 
         <ul class="projects-list">

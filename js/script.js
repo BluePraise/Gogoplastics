@@ -1,7 +1,6 @@
 $(document).ready(function() {
     feather.replace();
 
-    $(".page-title").addClass("animated fadeInUp");
 
     $(window).on("load", function() {
         $(".flexslider").flexslider({
@@ -48,15 +47,14 @@ $(window).on("load", function() {
             }, 500);
         }
 
-        $(".cc-dismiss").click(function() {
-            $(this)
-                .closest(".cc-window")
-                .addClass("cc-invisible");
+    $(".cc-dismiss").click(function(e) {
+      $(this)
+        .closest(".cc-window")
+        .addClass("cc-invisible");
 
-            localStorage.setItem("cookie-enable", "1");
-        });
-        } catch (e) {
-            return false;
-        }
-
+      localStorage.setItem("cookie-enable", "1");
+    });
+  } catch (e) {
+    return false;
+  }
 });

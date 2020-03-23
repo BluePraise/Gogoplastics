@@ -6,7 +6,7 @@
 
     <?php
         if ( have_posts() ) : ?>
-            <h2 class="page-title"><?php the_title();?></h2>
+            <h2 class="page-title animated fadeInUp"><?php the_title();?></h2>
             <div class="container">
             <?php
             while ( have_posts() ) : the_post(); ?>

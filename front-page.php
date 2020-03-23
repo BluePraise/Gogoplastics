@@ -22,7 +22,7 @@
                 </ul>
                 <?php endif; ?>
             </div>
-         <figure class="logo">
+         <figure class="logo animated fadeInDown">
 
                 <?php
 

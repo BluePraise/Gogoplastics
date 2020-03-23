@@ -11,7 +11,7 @@ get_header();
 
         if( have_posts() ) :  ?>
 
-            <h2 class="page-title"><?php the_title(); ?></h2>
+            <h2 class="page-title animated fadeInUp"><?php the_title(); ?></h2>
 
             <?php while( have_posts() ) : the_post();
             // Check value exists.
