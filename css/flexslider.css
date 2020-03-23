@@ -52,6 +52,7 @@
   -webkit-backface-visibility: hidden;
   /* height: 400px; */
   height: 80vh;
+  width: 100% !important;
 }
 .flexslider .slides img {
   width: 100%;

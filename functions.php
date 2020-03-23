@@ -95,7 +95,9 @@
         // wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );
         wp_enqueue_script( 'feather_icons' );
         wp_enqueue_script( 'gogo_jquery' );
-        wp_enqueue_script( 'flexslider' );
+        if (is_front_page() ) {
+            wp_enqueue_script( 'flexslider' );
+        }
         wp_enqueue_script( 'gogo_scripts' );
     }
 

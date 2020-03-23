@@ -33,5 +33,3 @@
                 </div>
             </div>
         </header>
-
-        <div class="wrapper">
