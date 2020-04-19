@@ -8,8 +8,8 @@
 
     <?php
         if ( have_posts() ) : ?>
-            <h2 class="page-title animated fadeInUp"><?php the_title();?></h2>
             <div class="content-container container">
+            <h2 class="page-title animated fadeInUp"><?php the_title();?></h2>
 
 
             <?php while ( have_posts() ) :
