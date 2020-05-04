@@ -2,13 +2,6 @@ $(document).ready(function() {
     feather.replace();
 
 
-    $(window).on("load", function() {
-        $(".flexslider").flexslider({
-            animation: "slide",
-            controlNav: false
-        });
-    });
-
     // When the user scrolls the page, execute myFunction
     window.onscroll = function() {
         fixedHeader();
@@ -58,3 +51,4 @@ $(window).on("load", function() {
     return false;
   }
 });
+

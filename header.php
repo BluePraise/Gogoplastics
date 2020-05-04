@@ -11,6 +11,15 @@
         <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
 		<link rel="profile" href="https://gmpg.org/xfn/11">
+        <!-- Place in the <head>, after the three links -->
+        <script>
+        $(window).on("load", function() {
+            $(".flexslider").flexslider({
+                animation: "slide",
+                controlNav: false
+            });
+        });
+        </script>
 
 		<?php wp_head(); ?>
 
@@ -25,7 +34,7 @@
                         <span class="hamburger__box"><span class="hamburger__inner"></span></span>
                     </button>
                     <a class="site-header__logo" href="/">
-                        <img src="<?php echo get_template_directory_uri() ?>/img/logo-small-black.png" alt="">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/logo-red.svg" alt="">
                     </a>
                 </div>
                 <div class="menu-wrap">

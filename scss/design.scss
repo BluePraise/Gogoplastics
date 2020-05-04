@@ -199,7 +199,7 @@ hr {
 }
 
 .dotted-title {
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
 }
 
 .content h3:after,
@@ -246,14 +246,44 @@ hr {
         height: 48px;
     }
 }
+.footer--col {
+    section {
+        padding: 0;
+    }
+    .widget_text p, .widget_text ol, .widget_text ul, .widget_text dl, .widget_text dt, .widget-content .rssSummary {
+        font-family: $mono;
+    }
+    .widget a.social-icon {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .widget a {
+      font-size: 12px;
+    }
+}
 
-@media (max-width: 768px) {
+.widget .widget-title {
+  margin-bottom: 0;
+}
+
+#mc_embed_signup input[type="submit"] {
+    background: none;
+    padding: 0;
+    font-size: 12px;
+    font-family: $mono;
+    color: #ed0000;
+    text-transform: initial;
+
+}
+
+@media (max-width: 767.98px) {
     .container {
         padding-top: 0;
         margin: 0 16px;
     }
     .logo {
         width: 20%;
+        min-width: auto;
     }
 
     h1.intro--title {
@@ -266,6 +296,7 @@ hr {
     .flexslider {
         top: 0px;
         margin: 0;
+        height: 20vh;
     }
     h2.page-title {
         margin: 0 0 37px 0;
@@ -285,7 +316,8 @@ hr {
         margin: 0px 16px;
         padding: 0;
         figure {
-            margin-bottom: 60px;
+            margin-bottom: 30px;
+            margin-top: 40px;
         }
     }
     .what-we-do .grid .content.col__right,
@@ -295,10 +327,44 @@ hr {
         grid-column: 1/5;
     }
 
+    .content p {
+      width: 100%;
+    }
+
+    .gallery_three_images {
+        flex-direction: column;
+        margin-bottom: 40px;
+        figure {
+          width: auto;
+          margin-bottom: 10px;
+          &.image--two {
+            width: auto;
+          }
+        }
+    }
+
+    .material_attribute figure {
+      width: auto;
+      margin-top: 0;
+    }
+
+    .single-projects .container {
+      display: block !important;
+      .col__left,
+      .col__right {
+        margin: 0px;
+        padding: 0px !important;
+      }
+
+
+    }
+
+    footer.container {
+      padding: 0;
+      margin-top: 40px;
+    }
     footer {
         flex-direction: column;
-        padding: 0 16px;
-        margin-top: 80px;
     }
     .footer--col {
         width: 100%;

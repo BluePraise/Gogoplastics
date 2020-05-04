@@ -11,6 +11,7 @@
     );
 
         add_theme_support( 'custom-logo', $defaults );
+        add_theme_support( 'widget-customizer' );
     }
 
     // 02 Widget Theme Support (mainly in footer)
@@ -33,36 +34,36 @@
         register_sidebar(
             array(
                 'name'          => __( 'Footer 1', 'gogoplastics' ),
-                'id'            => 'sidebar-col-1',
-                'description'   => __( 'Add widgets here to appear in the first footer column.', 'gogoplastics' ),
+                'id'            => 'footer-col-1',
+                'description'   => __( 'Voeg widgets toe aan de 1e kolom in de footer.', 'gogoplastics' ),
                 'before_widget' => '<section id="%1$s" class="widget %2$s">',
                 'after_widget'  => '</section>',
-                'before_title'  => '<h2 class="widget-title">',
-                'after_title'   => '</h2>',
+                'before_title'  => '<h4 class="widget-title dotted-title">',
+                'after_title'   => '</h4>',
             )
         );
 
         register_sidebar(
             array(
                 'name'          => __( 'Footer 2', 'gogoplastics' ),
-                'id'            => 'sidebar-col-2',
-                'description'   => __( 'Add widgets here to appear in the second footer column.', 'gogoplastics' ),
+                'id'            => 'footer-col-2',
+                'description'   => __( 'Voeg widgets toe aan de 2e kolom in de footer.', 'gogoplastics' ),
                 'before_widget' => '<section id="%1$s" class="widget %2$s">',
                 'after_widget'  => '</section>',
-                'before_title'  => '<h2 class="widget-title">',
-                'after_title'   => '</h2>',
+                'before_title'  => '<h4 class="widget-title dotted-title">',
+                'after_title'   => '</h4>',
             )
         );
 
         register_sidebar(
             array(
                 'name'          => __( 'Footer 3', 'gogoplastics' ),
-                'id'            => 'sidebar-col-3',
-                'description'   => __( 'Add widgets here to appear in the third footer column.', 'gogoplastics' ),
+                'id'            => 'footer-col-3',
+                'description'   => __( 'Voeg widgets toe aan de 3e kolom in de footer.', 'gogoplastics' ),
                 'before_widget' => '<section id="%1$s" class="widget %2$s">',
                 'after_widget'  => '</section>',
-                'before_title'  => '<h2 class="widget-title">',
-                'after_title'   => '</h2>',
+                'before_title'  => '<h4 class="widget-title dotted-title">',
+                'after_title'   => '</h4>',
             )
         );
     }
@@ -85,11 +86,8 @@
 
         // Goes in footer
         wp_register_script( 'gogo_jquery', 'https://code.jquery.com/jquery-3.4.1.js', array(), '3.4.1', true);
-        wp_register_script( 'flexslider', get_template_directory_uri() . '/js/jquery.flexslider-min.js', array('jquery'), '', true);
         wp_register_script( 'gogo_scripts', get_template_directory_uri() . '/js/script.js', array('jquery'), '0.0', true);
-
         wp_register_script( 'flexslider', get_template_directory_uri() . '/js/jquery.flexslider-min.js', array('jquery'), '', true);
-        wp_register_script( 'gogo_scripts', get_template_directory_uri() . '/js/script.js', array('jquery'), '0.0', true);
 
 
         // wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );

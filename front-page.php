@@ -4,7 +4,6 @@
     get_header();
 ?>
 
-
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/flexslider.css">
     <div class="slider-container">
         <div class="flexslider">

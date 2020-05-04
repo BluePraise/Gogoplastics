@@ -46,13 +46,17 @@
 .flexslider {
   margin: 0;
   padding: 0;
+  width: 100%;
+}
+.flexslider .slides {
+    transition-timing-function: linear;
 }
 .flexslider .slides > li {
   display: none;
   -webkit-backface-visibility: hidden;
   /* height: 400px; */
-  height: 80vh;
-  width: 100% !important;
+  /*height: 80vh;*/
+  /*width: 100% !important;*/
 }
 .flexslider .slides img {
   width: 100%;

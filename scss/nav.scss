@@ -93,15 +93,15 @@ li.nav-home a {
     &.is-active {
         .hamburger__inner {
             transform: translate3d(0, 10px, 0) rotate(45deg);
-            background-color: #000;
+            background-color: #ed0000;
             &:before {
                 transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
                 opacity: 0;
-                background-color: black;
+                background-color: #ed0000;
             }
             &:after {
                 transform: translate3d(0, -20px, 0) rotate(-90deg);
-                background-color: black;
+                background-color: #ed0000;
             }
         }
     }
@@ -125,7 +125,7 @@ li.nav-home a {
             transition-duration: 0.15s;
             transition-property: transform;
             border-radius: 4px;
-            background-color: #000;
+            background-color: #ed0000;
         }
 
         &:after,
@@ -173,6 +173,9 @@ li.nav-home a {
         top: 25px;
         transform: translate(-50%, 0%);
         display: none;
+        img {
+            width: 100px;
+        }
     }
 }
 
@@ -183,14 +186,13 @@ li.nav-home a {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     .h-wrapper {
         padding: 16px 0;
     }
 
     .hamburger {
         display: inline-block;
-        margin-left: 16px;
     }
 
     .menu-wrap {
