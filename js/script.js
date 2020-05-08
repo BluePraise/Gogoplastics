@@ -50,5 +50,10 @@ $(window).on("load", function() {
   } catch (e) {
     return false;
   }
+
+  $(".flexslider").flexslider({
+        animation: "slide",
+        controlNav: false
+    });
 });
 

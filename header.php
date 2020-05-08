@@ -13,12 +13,7 @@
 		<link rel="profile" href="https://gmpg.org/xfn/11">
         <!-- Place in the <head>, after the three links -->
         <script>
-        $(window).on("load", function() {
-            $(".flexslider").flexslider({
-                animation: "slide",
-                controlNav: false
-            });
-        });
+
         </script>
 
 		<?php wp_head(); ?>

@@ -5743,6 +5743,9 @@ hr {
     width: 100%;
     text-align: left;
   }
+  .grid {
+    display: block;
+  }
   .col__left,
 .col__right {
     margin: 0px 16px;

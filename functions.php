@@ -209,6 +209,37 @@
         register_post_type( 'products', $args );
     }
 
+
+    function my_acf_json_load_point( $paths ) {
+        // remove original path (optional)
+        unset($paths[0]);
+
+        // append path
+        $paths[] = get_stylesheet_directory() . '/acf-json';
+
+        // return
+        return $paths;
+    }
+    // ACF JSON https://www.advancedcustomfields.com/resources/local-json/
+    add_filter('acf/settings/load_json', 'my_acf_json_load_point');
+
+
+    function wpb_remove_version() {
+        return '';
+    }
+    add_filter('the_generator', 'wpb_remove_version');
+
+
+    // allow svg upload
+    function my_myme_types($mime_types){
+        $mime_types['svg'] = 'image/svg+xml'; //Adding svg extension
+        return $mime_types;
+    }
+    add_filter('upload_mimes', 'my_myme_types');
+
+
+
+
     function gogo_updated_messages( $messages ) {
       global $post, $post_ID;
       $messages['project'] = array(
