@@ -5504,7 +5504,7 @@ h2.page-title {
   position: absolute;
   word-break: break-word;
   display: inline-block;
-  top: -30px;
+  top: 0px;
   width: 500px;
   z-index: 2;
   margin-left: 160px;
@@ -5947,6 +5947,11 @@ hr {
   width: 100%;
   left: 0;
   right: 0;
+}
+
+#mc_embed_signup .button:hover {
+  background-color: #fff;
+  font-weight: bolder;
 }
 
 .wpforms-field-container {
