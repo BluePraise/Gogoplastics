@@ -133,43 +133,6 @@
     }
 
 
-    // 06 Custom Posttypes for projects
-    function projects_posttype() {
-
-        $labels = array(
-            'name'               => _x( 'Projects', 'post type general name' ),
-            'singular_name'      => _x( 'Project', 'post type singular name' ),
-            'add_new'            => _x( 'Add New', 'project' ),
-            'add_new_item'       => __( 'Add New Project' ),
-            'edit_item'          => __( 'Edit Project' ),
-            'new_item'           => __( 'New Project' ),
-            'all_items'          => __( 'All Projects' ),
-            'view_item'          => __( 'View Project' ),
-            'search_items'       => __( 'Search Projects' ),
-            'not_found'          => __( 'No projects found' ),
-            'not_found_in_trash' => __( 'No projects found in the Trash' ),
-            'parent_item_colon'  => '',
-            'menu_name'          => 'Projects'
-        );
-
-        $args = array(
-            'labels'             => $labels,
-            'description'        => 'An overview of gogoplastics projects',
-            'public'             => true,
-            'publicly_queryable' => true,
-            'show_ui'            => true,
-            'show_in_menu'       => true,
-            'query_var'          => true,
-            'rewrite'            => array( ),
-            'capability_type'    => 'post',
-            'has_archive'        => true,
-            'hierarchical'       => false,
-            'menu_position'      => null,
-            'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
-        );
-
-        register_post_type( 'projects', $args );
-    }
 
     // 06 Custom Posttypes for projects
     function product_posttype() {
@@ -278,8 +241,8 @@
     add_action( 'init', 'register_gogo_menu' );
 
     // 06 hook for custom posttypes
-    add_action( 'init', 'projects_posttype' );
-    add_action( 'init', 'product_posttype' );
+    // add_action( 'init', 'projects_posttype' );
+    // add_action( 'init', 'product_posttype' );
     add_action( 'wp', 'deregister_contact_form');
 
     function deregister_contact_form() {

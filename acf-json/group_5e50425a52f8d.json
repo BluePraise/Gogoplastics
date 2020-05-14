@@ -159,9 +159,9 @@
             ]
         },
         {
-            "key": "field_5eb2a064bbbfc",
-            "label": "Flex Content",
-            "name": "flex_content",
+            "key": "field_5ebd15c6065b6",
+            "label": "Flex Content Project",
+            "name": "flex_content_project",
             "type": "flexible_content",
             "instructions": "",
             "required": 0,
@@ -179,7 +179,7 @@
                     "display": "row",
                     "sub_fields": [
                         {
-                            "key": "field_5eb2a064bbbfd",
+                            "key": "field_5ebd15c6065b7",
                             "label": "Two Col Images with Captions",
                             "name": "two_col_images",
                             "type": "group",
@@ -194,7 +194,7 @@
                             "layout": "table",
                             "sub_fields": [
                                 {
-                                    "key": "field_5eb2a064bbbfe",
+                                    "key": "field_5ebd15c6065b8",
                                     "label": "Left Column",
                                     "name": "page_column_left",
                                     "type": "group",
@@ -209,7 +209,7 @@
                                     "layout": "block",
                                     "sub_fields": [
                                         {
-                                            "key": "field_5eb2a064bbbff",
+                                            "key": "field_5ebd15c6065b9",
                                             "label": "Top Image Left (small)",
                                             "name": "top_image_left",
                                             "type": "image",
@@ -233,7 +233,7 @@
                                             "mime_types": ""
                                         },
                                         {
-                                            "key": "field_5eb2a064bbc00",
+                                            "key": "field_5ebd15c6065ba",
                                             "label": "Caption Left",
                                             "name": "top_image_left_caption",
                                             "type": "textarea",
@@ -254,7 +254,7 @@
                                     ]
                                 },
                                 {
-                                    "key": "field_5eb2a064bbc01",
+                                    "key": "field_5ebd15c6065bb",
                                     "label": "Right Column",
                                     "name": "page_column_right",
                                     "type": "group",
@@ -269,7 +269,7 @@
                                     "layout": "block",
                                     "sub_fields": [
                                         {
-                                            "key": "field_5eb2a064bbc02",
+                                            "key": "field_5ebd15c6065bc",
                                             "label": "Top Image Right (large)",
                                             "name": "top_image_right",
                                             "type": "image",
@@ -293,7 +293,7 @@
                                             "mime_types": ""
                                         },
                                         {
-                                            "key": "field_5eb2a064bbc03",
+                                            "key": "field_5ebd15c6065bd",
                                             "label": "Caption Right",
                                             "name": "top_image_right_caption",
                                             "type": "textarea",
@@ -326,7 +326,7 @@
                     "display": "row",
                     "sub_fields": [
                         {
-                            "key": "field_5eb2a064bbc04",
+                            "key": "field_5ebd15c6065be",
                             "label": "Text Box",
                             "name": "text_box",
                             "type": "wysiwyg",
@@ -352,10 +352,10 @@
                     "key": "layout_5e61991e6c4f8",
                     "name": "gallery_with_three_images",
                     "label": "Gallery with three images",
-                    "display": "block",
+                    "display": "row",
                     "sub_fields": [
                         {
-                            "key": "field_5eb2a064bbc05",
+                            "key": "field_5ebd15c6065bf",
                             "label": "Gallery with Three Images",
                             "name": "gallery_with_three_images",
                             "type": "group",
@@ -367,10 +367,10 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "layout": "block",
+                            "layout": "table",
                             "sub_fields": [
                                 {
-                                    "key": "field_5eb2a064bbc06",
+                                    "key": "field_5ebd15c6065c0",
                                     "label": "Image 1",
                                     "name": "image_one",
                                     "type": "image",
@@ -394,7 +394,7 @@
                                     "mime_types": ""
                                 },
                                 {
-                                    "key": "field_5eb2a064bbc07",
+                                    "key": "field_5ebd15c6065c1",
                                     "label": "Image 1 Caption",
                                     "name": "image_one_caption",
                                     "type": "textarea",
@@ -413,7 +413,7 @@
                                     "new_lines": ""
                                 },
                                 {
-                                    "key": "field_5eb2a064bbc08",
+                                    "key": "field_5ebd15c6065c2",
                                     "label": "Image 2",
                                     "name": "image_two",
                                     "type": "image",
@@ -437,7 +437,7 @@
                                     "mime_types": ""
                                 },
                                 {
-                                    "key": "field_5eb2a064bbc09",
+                                    "key": "field_5ebd15c6065c3",
                                     "label": "Image 2 Caption",
                                     "name": "image_two_caption",
                                     "type": "textarea",
@@ -456,7 +456,7 @@
                                     "new_lines": ""
                                 },
                                 {
-                                    "key": "field_5eb2a064bbc0a",
+                                    "key": "field_5ebd15c6065c4",
                                     "label": "Image 3",
                                     "name": "image_three",
                                     "type": "image",
@@ -480,7 +480,7 @@
                                     "mime_types": ""
                                 },
                                 {
-                                    "key": "field_5eb2a064bbc0b",
+                                    "key": "field_5ebd15c7065c5",
                                     "label": "Image 3 Caption",
                                     "name": "image_three_caption",
                                     "type": "textarea",
@@ -511,7 +511,7 @@
                     "display": "row",
                     "sub_fields": [
                         {
-                            "key": "field_5eb2a064bbc0c",
+                            "key": "field_5ebd15c7065c6",
                             "label": "One Image with Caption",
                             "name": "one_image_with_caption",
                             "type": "group",
@@ -526,7 +526,7 @@
                             "layout": "block",
                             "sub_fields": [
                                 {
-                                    "key": "field_5eb2a064bbc0d",
+                                    "key": "field_5ebd15c7065c7",
                                     "label": "Image",
                                     "name": "image",
                                     "type": "image",
@@ -550,7 +550,7 @@
                                     "mime_types": ""
                                 },
                                 {
-                                    "key": "field_5eb2a064bbc0e",
+                                    "key": "field_5ebd15c7065c8",
                                     "label": "Caption",
                                     "name": "caption",
                                     "type": "textarea",
@@ -604,5 +604,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1588765514
+    "modified": 1589452162
 }
