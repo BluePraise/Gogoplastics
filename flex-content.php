@@ -12,29 +12,28 @@
                 $image_right        = $page_col_right['top_image_right'];
                 $caption_right      = $page_col_right['top_image_right_caption'];
             ?>
-            <div class="grid">
-                <div class="top col__left">
-                    <figure>
-                        <img src="<?php echo esc_url( $image_left['url'] ); ?>" alt="<?php //echo esc_attr( $col_left_photo['alt'] ); ?>" />
-                        <figcaption class="image-caption"><?php echo $caption_left; ?></figcaption>
-                    </figure>
-                </div>
 
-                <div class="top col__right">
-                    <figure>
-                        <img src="<?php echo esc_url( $image_right['url'] ); ?>" alt="<?php //echo esc_attr( $col_left_photo['alt'] ); ?>" />
-                        <figcaption class="image-caption"><?php echo $caption_right; ?></figcaption>
-                    </figure>
-                </div>
+            <div class="col__left">
+                <figure>
+                    <img src="<?php echo esc_url( $image_left['url'] ); ?>" alt="<?php //echo esc_attr( $col_left_photo['alt'] ); ?>" />
+                    <figcaption class="image-caption"><?php echo $caption_left; ?></figcaption>
+                </figure>
             </div>
+
+            <div class="col__right">
+                <figure>
+                    <img src="<?php echo esc_url( $image_right['url'] ); ?>" alt="<?php //echo esc_attr( $col_left_photo['alt'] ); ?>" />
+                    <figcaption class="image-caption"><?php echo $caption_right; ?></figcaption>
+                </figure>
+            </div>
+
 
             <?php else: ?>
 
-        <div class="content">
 
         <?php if ( get_row_layout() == 'text_box' ): ?>
 
-            <div class="material_attribute">
+            <div class="image-full-size">
                 <?php the_sub_field('text_box'); ?>
             </div>
 
@@ -66,11 +65,10 @@
                 $property_image         = $one_image['image'];
                 $property_image_caption = $one_image['caption'];
             ?>
-                <div class="material_attribute">
-                    <figure class="image--center">
-                        <img src="<?php echo esc_url( $property_image ); ?>" alt="">
-                        <figcaption class="image-caption"><?php echo $property_image_caption; ?></figcaption>
-                    </figure>
-                </div>
+            <div class="material_attribute">
+                <figure class="image--center">
+                    <img src="<?php echo esc_url( $property_image ); ?>" alt="">
+                    <figcaption class="image-caption"><?php echo $property_image_caption; ?></figcaption>
+                </figure>
             </div>
 <?php endif; endif; endwhile; endif; ?>

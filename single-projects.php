@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main id="site-content" class="container projects" role="main">
+<main id="site-content" class="container single-project" role="main">
 
 
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/projects.css">

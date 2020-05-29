@@ -5505,7 +5505,7 @@ h2.page-title {
   word-break: break-word;
   display: inline-block;
   top: 0px;
-  width: 500px;
+  width: 560px;
   z-index: 2;
   margin-left: 160px;
   margin-top: 90px;
@@ -5595,6 +5595,7 @@ h2.page-title {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 100px;
+  grid-column: 1/5;
 }
 
 .gallery_three_images .image--one {
@@ -5607,6 +5608,10 @@ h2.page-title {
 
 .gallery_three_images .image--three {
   width: 154px;
+}
+
+.image-full-size {
+  margin-top: 140px;
 }
 
 .material_attribute figure {
@@ -5779,6 +5784,9 @@ hr {
   }
   .gallery_three_images figure.image--two {
     width: auto;
+  }
+  .image-full-size {
+    margin-top: 0;
   }
   .material_attribute figure {
     width: auto;

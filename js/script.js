@@ -50,11 +50,9 @@ $(window).on("load", function() {
   } catch (e) {
     return false;
   }
-});
-
-$(window).on("load", function() {
-    $(".flexslider").flexslider({
+  $(".flexslider").flexslider({
         animation: "slide",
         controlNav: false
     });
+
 });
